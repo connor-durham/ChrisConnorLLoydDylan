@@ -1,10 +1,28 @@
+Skip to content
+ 
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@connor-durham 
+0
+1 3 mariela2p/StudyBuddy
+ Code  Issues 0  Pull requests 0  Projects 0  Wiki  Security  Insights
+StudyBuddy/index.html
+ Mariela Pascual some changes
+eec5115 on Feb 18, 2018
+159 lines (99 sloc)  3.68 KB
+    
 
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
 	<meta charset="UTF-8">
 
-	<title>Band-Aide</title>
+	<title>Study Buddy</title>
 	<!-- Firebase -->
   <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
 
@@ -39,7 +57,7 @@
 
 			<div class="container text-center">
 
-				<h1 id="headerText">Band-Aide</h1>
+				<h1 id="headerText">Study Buddy</h1>
 	      
 
 				<!-- Random Quotes starts here -->
@@ -48,9 +66,7 @@
 						<p class="author" id="author"></p>
 				</div>
 				<div class="btn-container">
-					<div class="active-pink-3 active-pink-4 mb-4">
-                        <input class="form-control searcher" type="text" placeholder="Search" aria-label="Search">
-                      </div>
+					<button class="btn btn-success" id="quoteButton">Random Quote</button>
 				</div>
 				<!-- Random Quotes Ends Here -->
 
@@ -64,19 +80,18 @@
 
 			<div class="container text-center">
 
-                <h1 id="sectionheader">Band Name</h1>
-                
-                 <img id="start" src="assets/img/headerback.jpg">
+				<h3 id="sectionHeaders">Let's get to work!</h3>
+
+				<h1 id="timer"><time>00:00:00</time></h1>
 
 				<div class="row" id="buttonsContainer">
 
 					<div class="col-sm-4">
 
 						<div class="startBtn">
-                            <!-- <img id="start" src="assets/img/play.png"> -->
-                            <h2>Bio</h2>
+							<img id="start" src="assets/img/play.png">
 						</div>
-						<p id="textBtn">lorem ipsum</p>
+						<p id="textBtn">Press this button when you are ready to start studiyng. Also after taking a break.</p>
 
 
 					</div>
@@ -84,10 +99,9 @@
 					<div class="col-sm-4">
 
 						<div class="pauseBtn">
-                            <!-- <img id="pause" src="assets/img/pause.png"> -->
-                            <h2>Events</h2>
+							<img id="pause" src="assets/img/pause.png">
 						</div>
-						<p id="textBtn">lorem ipsum</p>
+						<p id="textBtn">Press this button to take a break. You should do it at least every hour</p>
 
 
 					</div>
@@ -95,10 +109,9 @@
 					<div class="col-sm-4">
 
 						<div class="stopBtn">
-                            <!-- <img id="stop" src="assets/img/stop.png"> -->
-                            <h2>Music</h2>
+							<img id="stop" src="assets/img/stop.png">
 						</div>
-						<p id="textBtn">lorem ipsum</p>
+						<p id="textBtn">Press this button when you're done for the day. The minimum recommended is 20 hours per week</p>
 
 
 					</div>
@@ -117,7 +130,7 @@
 
 			<div class="container text-center">
 
-				<h1 id="sectionHeaders">Videos</h1>
+				<h1 id="sectionHeaders">Weekly Chart</h1>
 				<br>
 				<div class="container" id="chartContainer">
 				 	<canvas id="myChart"></canvas>
@@ -143,13 +156,16 @@
 
 	<div class="container text-center">
 
-		<p id="footer"></p>
+		<p id="footer">© Asley Calixte, Calvin Mendoza, Ejike Onwe, Mariela Pascual   2017</p>
 
 	</div>
 
  </footer><!--End of footer section -->
 
 
+  <!-- API GOOGLE MAPS-->
+ <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2QXSXjGIAiHScc3leyshQJ_k25zu9ZYU">
+	</script>
 
  <!-- LINK TO JS FILE -->
  <script type="text/javascript" src="assets/js/script.js"></script>
@@ -158,4 +174,15 @@
 </body>
 
 </html>
-
+© 2019 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
