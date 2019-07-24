@@ -1,7 +1,7 @@
-<<<<<<< HEAD:events.js
-function displayEvents() {
-    var events = $(this).attr("data-name");
-    var queryUrl = "https://api.songkick.com/api/3.0/artists/{artist_id}/calendar.json?apikey={your_api_key}"
+
+function eventSearch() {
+    // var events = $(this).attr("data-name");
+    var queryUrl = "https://app.ticketmaster.com/discovery/v2/events.json?countryCode=US&keyword=nirvana&apikey=RncxtNn2EJaysh6A9ZPsAFJBB3p71oXX"
 
 // ajax call for the API
     $.ajax({
@@ -10,6 +10,6 @@ function displayEvents() {
     }).then(function(response) { 
         console.log(response)
     })
-=======
+}
+eventSearch();
 
->>>>>>> 7f6058d6dad12b26971901d914edbdda105cbcf4:assets/js/events.js
