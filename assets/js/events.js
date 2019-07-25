@@ -13,3 +13,16 @@ function eventSearch() {
 }
 eventSearch();
 
+
+$("#searcher").on("click", function(e) {
+    
+    e.preventDefault()
+
+
+    let searchanswer = $("#searchbar").val().trim()
+    console.log(searchanswer)
+
+
+})
+
+
