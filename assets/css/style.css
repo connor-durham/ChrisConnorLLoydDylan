@@ -40,3 +40,16 @@ body{
 	font-size:70px;
     font-weight:500;
 }
+#searcher {
+	background-color:violet;
+}
+
+#searchbar {
+	padding-left: 40vh;
+	padding-right: 40vh;
+	
+}
+
+.searchbox {
+	margin-top: 10vh;
+}

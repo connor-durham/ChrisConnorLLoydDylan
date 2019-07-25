@@ -1,5 +1,4 @@
-function iTunesSearch() {
-  let term = "nirvana"
+function iTunesSearch(term) {
   // let queryUrl = "https://itunes.apple.com/search?term=" + searchKeyword + "&country=US&callback=callback&limit=2"
 
   $.ajax(
@@ -19,8 +18,18 @@ function iTunesSearch() {
       
     });
 }
-iTunesSearch();
+
 
 function callback() {
   //Empty function that returns callback from iTunes API
 }
+$("#searcher").on("click", function(e) {
+    
+  e.preventDefault()
+
+
+  let searchanswer = $("#searchbar").val().trim()
+  iTunesSearch(searchanswer)
+
+
+})
