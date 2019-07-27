@@ -31,12 +31,12 @@ function eventSearch(anything) {
         
         for ( let i = 0; i < 5; i++) {
         let term = response._embedded.events[i].url;
-        let eventsDiv = $("<a class='eventButton' href='" + term + "'>")      
+        let eventsDiv = $("<a  href='" + term + "'></a>")      
         
-            let newDiv = $('<p>')
-            newDiv.text(response._embedded.events[i].url);
+            let newDiv = $('<p class="eventButton">')
+            newDiv.text(response._embedded.events[i].name);
             console.log(response._embedded.events[i].url)
-            console.log(response._embedded.events[i].dates.start.localDate)
+            newDiv.append(" " +response._embedded.events[i].dates.start.localDate)
             
 
             eventsDiv.append(newDiv)
@@ -62,10 +62,10 @@ $("#searcher").on("click", function(e) {
 
 
     let searchanswer = $("#searchbar").val().trim()
+    $("#sectionheader").text(searchanswer)
     console.log(searchanswer)
     eventSearch(searchanswer)
-
-
 })
+
 
 
