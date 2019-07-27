@@ -114,19 +114,33 @@ color: magenta;
 	height: 400px;
 	width: 400px;
 	  border-radius: 50%;
-	  margin: 0px 40px;
 }
+
+#overlord {
+	position: relative;
+}
+#bandPhoto {
+	position: absolute;
+	height: 400px;
+	width: 400px;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+}
+
 #bandTitle {
-	margin: 10px 40px;
+	text-align: center;
 }
 
 .eventButton{
 	width: 100%;
 	color: magenta;
+	text-align: center;
+	margin: 0px;
+	border: solid white 2px;
 }
-h1{
+h1 , h2{
 	color: magenta;
+	text-align: center;
 }
-h2{
-	color: magenta;
-}
+

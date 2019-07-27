@@ -65,6 +65,7 @@ $("#searcher").on("click", function(e) {
     $("#sectionheader").text(searchanswer)
     console.log(searchanswer)
     eventSearch(searchanswer)
+    bioFunc(searchanswer)
 })
 
 
