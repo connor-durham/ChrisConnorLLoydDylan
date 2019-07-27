@@ -1,6 +1,6 @@
 function displayBio(bio){ 
-    alert(bio); 
-    // let bioDiv = $('<div>');
+    
+
     $.ajax({
         type: "GET",
         url: "http://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=" + bio + "&api_key=7a7de95b5bc3f285d79afa7320acda1e&format=json",
@@ -20,8 +20,13 @@ function displayBio(bio){
 }
 $("#searcher").on("click", function(e) {
     
-    e.preventDefault()
+    e.preventDefault();
     var bio = $("#searchbar").val().trim();
+    if (bio.length === 0){
+        alert('Please enter an artist on the search bar!');
+        return;
+    }
+
     displayBio(bio);
 
 })
