@@ -12,7 +12,8 @@ function displayPhotos(eventId) {
     }).then(function(response) {
         console.log('the response brah', response.images[0].url);
         image.attr("src", response.images[0].url);
-        $("#start").append(image);
+        image.attr("id", "bandImage");
+        $("#bandPhoto").append(image);
     })
  }
 

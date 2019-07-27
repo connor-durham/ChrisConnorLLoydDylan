@@ -22,6 +22,7 @@
 </head>
 <body>
 
+	<!--HEADER================================================================================================================-->
 		<header id="home">
 
 			<div class="container text-center">
@@ -41,34 +42,25 @@
 			</div>
 
 		</header>
-		<div id="timerSection">
 
-			<div class="container text-center">
+		<!--BAND INFO ROWS===============================================================================================================================================-->
+		<div class="row">
 
-                <h1 id="sectionheader">Band Name</h1>
-                
-                 <div id="start"></div>
-
-				<div class="row" id="buttonsContainer">
-
-					<div class="col-sm-4">
-
-						<div class="bio">
-                            <h2>Bio</h2>
-						</div>
-						<p id="biotext">lorem ipsum</p>
-					</div>
-
-				</div>
+			<div class="col-sm-4" id="bandTitle">
+				<h1 id="sectionheader">Band Name</h1>
+			</div>
+			<div class="col-sm-8" id="socialMedia">
 
 			</div>
+		</div>
 
-			<div class="row">
-		
+		<div class="row">
+			<div class="col-sm-4" id="bandPhoto"></div>
+			<div class="col-sm-8"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dolore dolor nemo atque similique nobis placeat, necessitatibus ratione possimus molestias reiciendis animi, odit minus impedit dolores? Libero doloribus quod mollitia?</p></div>
+		</div>
 
-        </div>
-        
-		<div id="chartSection">
+        <!--ITUNES ROW===================================================================================================================================================-->
+		<div class="row">
 
 			<div class="container text-center">
 
@@ -77,9 +69,12 @@
 				<br>
 				<div class="container" id="chartContainer">
 				 	<canvas id="myChart"></canvas>
-
+				</div>
+			</div>
 		</div>
-		<div class="row">
+
+		<!--EVENTS / STORE ROW =========================================================================================================================================-->
+			<div class="row">
     
 
 				<div class = "col-sm-6" id="chartSection">
@@ -98,11 +93,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
 
-		</div>
-
-	</div>
 
 <footer class="footer">
 
