@@ -31,7 +31,7 @@
 				<div class="btn-container">
 					<div class="active-pink-3 active-pink-4 mb-4">
 							<form class="form-inline mr-auto searchbox">
-									<input class="form-control mr-sm-2" id="searchbar" type="text" placeholder="" aria-label="Search">
+									<input class="form-control mr-sm-2" id="searchbar" type="text" placeholder="Search your band!" aria-label="Search">
 									<button class="btn btn-unique btn-rounded btn-sm my-0" id="searcher" type="submit">Search</button>
 								  </form>
                       </div>
@@ -57,29 +57,31 @@
                             <h2>Bio</h2>
 						</div>
 						<p id="biotext">lorem ipsum</p>
-
-
-			
-
-					<div class="col-sm-4">
-
-						<div class="music">
-                         
-                            <h2>Music</h2>
-						</div>
-						<p id="musictext">lorem ipsum</p>
-
-
 					</div>
 
 				</div>
 
 			</div>
 
+			<div class="row">
+		
+
+        </div>
+        
+		<div id="chartSection">
+
+			<div class="container text-center">
+
+                <h1 id="sectionHeaders">Videos</h1>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/9sWEecNUW-o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<br>
+				<div class="container" id="chartContainer">
+				 	<canvas id="myChart"></canvas>
 
 		</div>
 		<div class="row">
     
+
 				<div class = "col-sm-6" id="chartSection">
 					<div>
 						<h1>Events</h1>
@@ -87,17 +89,21 @@
 						<div id="events"></div>
 						</div>
 					</div>
-				</div>
+				
 				<div class="col-sm-6" >
 					<div>
 						<h1 id="iTunesName">iTunes</h1>
 						<br>
-						<div id="iTunes">
-						</div>
+						<div id="iTunes"></div>
 					</div>
 				</div>
 			</div>
-		
+		</div>
+
+		</div>
+
+	</div>
+
 <footer class="footer">
 
 	<div class="container text-center">
@@ -111,10 +117,12 @@
 
 
  <!-- LINK TO JS FILE -->
- <script type="text/javascript" src="assets/js/script.js"></script>
+<script src="assets/js/video.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/iTunes.js"></script>
 <script src="assets/js/events.js"></script>
+<script src="assets/js/iTunes.js"></script>
 <script src="assets/js/photos.js"></script>
-
 </body>
 
 </html>
