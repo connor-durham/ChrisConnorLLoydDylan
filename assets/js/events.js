@@ -63,8 +63,6 @@ $("#searcher").on("click", function(e) {
     let searchanswer = $("#searchbar").val().trim()
     console.log(searchanswer)
     eventSearch(searchanswer)
-
-
 })
 
 
