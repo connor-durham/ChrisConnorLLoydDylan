@@ -105,3 +105,15 @@ body{
 	width: 300px;
 	object-fit: cover;
 }
+
+
+#bandImage {
+	object-fit: cover;
+	height: 400px;
+	width: 400px;
+	  border-radius: 50%;
+	  margin: 0px 40px;
+}
+#bandTitle {
+	margin: 10px 40px;
+}
