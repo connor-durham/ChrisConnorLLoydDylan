@@ -73,6 +73,7 @@ $("#searcher").on("click", function(e) {
 
   let searchanswer = $("#searchbar").val().trim()
   iTunesSearch(searchanswer)
+  wikiSearch(searchanswer)
 
 
 })
