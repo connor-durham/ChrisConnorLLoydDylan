@@ -33,18 +33,22 @@ body{
 	background-position: center;
 	background-size: cover;
 	color:white;
-	border-bottom: 2px solid #c9c9c9;
+
+	border-bottom: 3px solid magenta;
 }
 #headerText{
 
-	margin-top: 141px;
-	font-size:70px;
-	font-weight:500;
-	background-color: black;
+	margin-top: 120px;
+	font-size: 180px;
+	font-weight: 750;
+	background-color: transparent;
+	text-shadow: -1px 0 black, 0 3px black, 3px 0 black, 0 -1px black;
+
 
 }
+
 #searcher {
-	background-color:violet;
+	background-color:magenta;
 }
 
 #searchbar {
@@ -143,18 +147,25 @@ color: magenta;
 }
 
 .eventButton{
-    height: 95px;
+
+	display:flex;
+    height: 60px;
     width: 90%;
     color: magenta;
     text-align: center;
-    margin: 0px 5%;
+
+	margin: 0px 5%;
 	border: solid white 1px;
 	border-style: groove;
 	background-color: #292929;
+	align-items: center;
+	justify-content: center;
+	font-family: Raleway, Arial, sans-serif;
+	font-size: 18px;
+
+
 }
-
-
-h1 , h2{
+h1, h2{
 	color: magenta;
 	text-align: center;
 }
