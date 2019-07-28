@@ -33,7 +33,7 @@ body{
 	background-position: center;
 	background-size: cover;
 	color:white;
-	border-bottom: 8px solid #dbb98f;
+	border-bottom: 2px solid #c9c9c9;
 }
 #headerText{
 
@@ -162,9 +162,7 @@ h1 , h2{
 	height: 420;
 }
 .youtubeCorrector {
-	width: 100%;
-	height: 560px;
-	position: relative;
+	margin: 0px 0px 88px 0px;
 }
 .youtubeView {
 	position: absolute;
@@ -183,10 +181,30 @@ h1 , h2{
     position: absolute;
     font-size: 27px;
 }
-
+#footer {
+	margin: 10px;
+}
+#footer2 {
+	margin: 10px;
+}
 .footer {
+	position: fixed;
+	bottom: 0px;
+	left: 0;
+	right: 0;
 	color: magenta;
-	margin: 50px 0px 10px 0px;
+	margin: auto;
+}
+.footer2 {
+	bottom: 0px;
+	left: 0;
+	right: 0;
+	color: magenta;
+	margin: auto;
+}
+
+.youpoop {
+	flex-wrap: wrap;
 }
 
 @media only screen and (max-width: 1200px) {

@@ -22,10 +22,10 @@ $("#searcher").on("click", function(e) {
         method: "GET"
     }).then(function(response) {
         console.log(response.items[0].id.videoId)
-        for (let i=0; i<2; i++) {
+        for (let i=0; i<3; i++) {
             let video = response.items[i].id.videoId
             let URL = "https://www.youtube.com/embed/" + video
-            let frame = $("<iframe>")
+            let frame = $("<iframe class='youpoop'>")
             frame.attr("width", "560")
             frame.attr("height", "315")
             frame.attr("src", URL)
