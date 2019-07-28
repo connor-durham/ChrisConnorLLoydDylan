@@ -15,6 +15,7 @@ function iTunesSearch(term) {
       method: "GET"
     }).then(function(response) {
       console.log(response)
+      $("#iTunes").empty();
       
       for ( let i = 0; i < response.results.length; i++) {
         console.log(response.results[i].artistName)
