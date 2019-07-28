@@ -29,7 +29,7 @@ function eventSearch(anything) {
     }).then(function(response) {
         console.log(response)
         
-        for ( let i = 0; i < 5; i++) {
+        for ( let i = 0; i < response._embedded.events.length; i++) {
         let term = response._embedded.events[i].url;
         let eventsDiv = $("<a  href='" + term + "'></a>")      
         
@@ -62,10 +62,9 @@ $("#searcher").on("click", function(e) {
 
 
     let searchanswer = $("#searchbar").val().trim()
-    $("#sectionheader").text(searchanswer)
+    // $("#sectionheader").text(searchanswer)
     console.log(searchanswer)
     eventSearch(searchanswer)
-    bioFunc(searchanswer)
 })
 
 
