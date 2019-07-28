@@ -67,7 +67,12 @@ $("#searcher").on("click", function(e) {
     // $("#sectionheader").text(searchanswer)
     console.log(searchanswer)
     eventSearch(searchanswer)
+    footerBull()
 })
 
+function footerBull() {
+    $(".footer").hide()
+    $(".footer2").show()
+}
 
 

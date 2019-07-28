@@ -58,6 +58,7 @@ function iTunesSearch(term) {
         //append entire iTunes div
         $("#iTunes").append(iTunesDiv);
       }
+      
     });
     
 }
