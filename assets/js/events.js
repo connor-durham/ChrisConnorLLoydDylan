@@ -29,6 +29,7 @@ function eventSearch(anything) {
         method: "GET"
     }).then(function(response) {
         console.log(response)
+        $('#events').empty()
         
         for ( let i = 0; i < response._embedded.events.length; i++) {
         let term = response._embedded.events[i].url;
