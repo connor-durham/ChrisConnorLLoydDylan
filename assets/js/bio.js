@@ -7,13 +7,16 @@ function displayBio(bio){
         contentType: "application/json; charset=utf-8",
         async: false,
         dataType: "json",
-        success: function (data, textStatus, jqXHR) {
+        success: function (data) {
             console.log(data);
-            $("#bandBio").text(data.artist.bio.summary);
+            let bioShit = $("<p class='bio'>").html(data.artist.bio.summary);
+            let bandName = (data.artist.name)
+            $("#bandBio").html(bioShit);
             // bioDiv.attr("src", data.artist.bio.summary);
             // bioDiv.attr("id", "bioWords");
             // $("#bandBio").append(bioDiv);
             console.log(data.artist.bio.summary)
+            $("#sectionheader").text(bandName)
             
         },
     });

@@ -114,19 +114,62 @@ color: magenta;
 	height: 400px;
 	width: 400px;
 	  border-radius: 50%;
-	  margin: 0px 40px;
 }
+
+#overlord {
+	position: relative;
+}
+#bandPhoto {
+	position: absolute;
+	height: 400px;
+	width: 400px;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+}
+
 #bandTitle {
-	margin: 10px 40px;
+	text-align: center;
 }
 
 .eventButton{
+    height: 95px;
+    width: 90%;
+    color: magenta;
+    text-align: center;
+    margin: 0px 5%;
+    border: solid white 2px;
+}
+
+
+h1 , h2{
+	color: magenta;
+	text-align: center;
+}
+#bandMain {
+	height: 420;
+}
+.youtubeCorrector {
 	width: 100%;
-	color: magenta;
+	height: 560px;
+	position: relative;
 }
-h1{
-	color: magenta;
+.youtubeView {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
 }
-h2{
+
+#bandBio {
+	height:400px;
+}
+.bio {
+	margin: 0px 90px 0px 0px;
+	color: lightgray;
+}
+
+.footer {
 	color: magenta;
+	margin: 50px 0px 10px 0px;
 }
