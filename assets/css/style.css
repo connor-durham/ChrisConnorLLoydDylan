@@ -37,7 +37,7 @@ body{
 }
 #headerText{
 
-	margin-top: 15%;
+	margin-top: 141px;
 	font-size:70px;
 	font-weight:500;
 	background-color: black;
@@ -120,7 +120,6 @@ color: magenta;
 	position: relative;
 }
 #bandPhoto {
-	position: absolute;
 	height: 400px;
 	width: 400px;
 	left: 0px;
@@ -138,7 +137,9 @@ color: magenta;
     color: magenta;
     text-align: center;
     margin: 0px 5%;
-    border: solid white 2px;
+	border: solid white 1px;
+	border-style: groove;
+	background-color: #292929;
 }
 
 
@@ -163,13 +164,108 @@ h1 , h2{
 
 #bandBio {
 	height:400px;
+	position: relative;
 }
 .bio {
-	margin: 0px 90px 0px 0px;
-	color: lightgray;
+    margin: 32px 90px 0px 0px;
+    color: lightgray;
+    position: absolute;
+    font-size: 27px;
 }
 
 .footer {
 	color: magenta;
 	margin: 50px 0px 10px 0px;
+}
+
+@media only screen and (max-width: 1200px) {
+	.bio {
+		font-size: 24px;
+		margin: 20px 24px 0px 0px;
+	}
+	#bandImage {
+		height: 333px;
+		width: 333px;
+	}
+	#bandPhoto {
+		height: 333px;
+		width: 333px;
+	}
+}
+@media only screen and (max-width: 990px) {
+	.bio {
+		font-size: 20px;
+		margin: 20px 15px 0px 4px;
+	}
+	#bandImage {
+		margin: 0px 0px 0px 15px;
+		height: 300px;
+		width: 300px;
+	}
+	#bandPhoto {
+		height: 300px;
+		width: 300px;
+	}
+}
+@media only screen and (max-width: 940px) {
+	.bio {
+		font-size: 18px;
+		margin: 20px 20px 0px 4px;
+	}
+	#bandImage {
+		margin: 0px 0px 0px 15px;
+		height: 277px;
+		width: 277px;	
+	}
+	#bandPhoto {
+		height: 300px;
+		width: 300px;
+	}
+	.youtubeView {
+		width: 94%;
+	}
+}
+@media only screen and (max-width: 858px) {
+	.bio {
+		font-size: 17px;
+		margin: 20px 25px 0px 11px;
+	}
+	#bandImage {
+		margin: 9px 0px 0px 20px;
+		height: 254px;
+		width: 254px;
+	}
+	#bandPhoto {
+		height: 300px;
+		width: 300px;
+	}
+	.youtubeView {
+		width: 94%;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.bio {
+		font-size: 17px;
+		margin: 28px 15px 10px 12px;
+		position: unset;
+	}
+	#bandImage {
+		margin: 9px 0px 0px 0px;
+		height: 400px;
+		width: 400px;
+	}
+	#bandPhoto {
+		height: 400px;
+		width: 400px;
+	}
+	.youtubeView {
+		width: 100%;
+	}
+	#searchbar {
+		width: 100%;
+	}
+	#bandBio {
+		margin: 15px 8px;
+		height: fit-content;
+	}
 }
