@@ -64,6 +64,10 @@ color: magenta;
 	align-items: center;
 }
 
+#holder {
+	display: none;
+}
+
 
 
 

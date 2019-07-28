@@ -2,6 +2,11 @@
 
 $("#searcher").on("click", function(e) {
 
+
+
+    $("#holder").css("display","block");
+
+
     e.preventDefault()
 
     $("#videoholder").empty()
