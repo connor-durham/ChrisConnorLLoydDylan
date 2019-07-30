@@ -13,7 +13,7 @@ $("#searcher").on("click", function(e) {
 
     var videos = $("#searchbar").val().trim()
 
-    var queryUrl = "https://www.googleapis.com/youtube/v3/search?part=snippet&q=" +videos+ "&order=rating&type=video&videoDefinition=high&videoEmbeddable=true&key=AIzaSyA7HK1zi1Uozn3nq7QtyCpY_LBtjA_82l8"
+    var queryUrl = "https://www.googleapis.com/youtube/v3/search?part=snippet&q=" +videos+ "&order=viewCount&relevanceLanguage=en&type=video&videoDefinition=high&videoEmbeddable=true&key=AIzaSyA7HK1zi1Uozn3nq7QtyCpY_LBtjA_82l8"
 
     console.log(videos)
     
