@@ -166,6 +166,7 @@ color: magenta;
 
 }
 h1, h2{
+	padding: 30px;
 	color: magenta;
 	text-align: center;
 }
