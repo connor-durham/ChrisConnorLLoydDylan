@@ -64,7 +64,7 @@ $("#searcher").on("click", function(e) {
 
 
     let searchanswer = $("#searchbar").val().trim()
-    // $("#sectionheader").text(searchanswer)
+    $("#sectionheader").text(searchanswer)
     console.log(searchanswer)
     eventSearch(searchanswer)
     footerBull()
