@@ -3,7 +3,7 @@ function displayBio(bio){
 
     $.ajax({
         type: "GET",
-        url: "https://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=" + bio + "&api_key=7a7de95b5bc3f285d79afa7320acda1e&format=json",
+        url: "https://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=" + bio + "&api_key=bf773c5707e336cebbff0b38c08db0c2&format=json",
         contentType: "application/json; charset=utf-8",
         async: false,
         dataType: "json",

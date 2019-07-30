@@ -166,8 +166,11 @@ color: magenta;
 
 }
 h1, h2{
+	padding: 30px;
 	color: magenta;
 	text-align: center;
+	font-size: 60px;
+	font-weight:300;
 }
 #bandMain {
 	height: 420;
@@ -315,3 +318,4 @@ h1, h2{
 		font-size: 77px;
 	}
 }
+
