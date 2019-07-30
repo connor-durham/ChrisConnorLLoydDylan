@@ -25,11 +25,6 @@ $("#searcher").on("click", function(e) {
     
     e.preventDefault();
     var bio = $("#searchbar").val().trim();
-    if (bio.length === 0){
-        alert('Please enter an artist on the search bar!');
-        return;
-    }
-
     displayBio(bio);
 
 })
